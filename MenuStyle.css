@@ -1,0 +1,36 @@
+﻿nav ul, ul li 
+{
+        display: block;
+        list-style: none;
+        margin: 0px;
+        padding: 0px;
+}
+nav ul
+{
+        width:190px;
+        padding: 2px 2px 1px 2px;
+        background-color: darkred;
+        border: 2px double yellow;
+}
+nav ul li
+{
+        border-bottom: 2px solid darkred;
+}
+nav ul a:link, ul a:visited 
+{
+        display: block;
+        width: 166px;
+        text-decoration: none;
+        padding: 7px;
+        font-weight: bold;
+        background-color: #d45050;
+        color: black;
+        border-right: 8px darkred;
+}
+nav ul a:hover
+{
+        width: 156px;
+        background-color: #ff7c7c;
+        color:  black;
+        border-left: 10px solid #d45050;
+}

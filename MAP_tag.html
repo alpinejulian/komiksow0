@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css" />
+    <style>
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: yellow;
+        }
+        p {
+            text-align: center;
+        } 
+    </style>
+</head>
+<body>
+    <header style="background-color:darkred">
+        <h1>KOMIKSOWO</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Index.html" target="_self">Strona Główna</a></li>
+            <li><a href="Tabelka.html" target="_self">Top 50 Artystów</a></li>
+            <li><a href="Prezentacja-top5.html" target="_self">Dziś Polecamy</a></li>
+            <li><a href="Formularz.html" target="_self">Coś o Tobie</a></li>
+            <li><a href="Kontakt.html" target="_self">Coś o Mnie</a></li>
+            <li><a href="MAP_tag.html" target="_self">Jak czytać mangę?</a></li>
+            <li><a href="JavaScript1.html" target="_self">JavaScript1</a></li>
+            <li><a href="JavaScript2.html" target="_self">JavaScript2</a></li>
+            <li><a href="JavaScript3.html" target="_self">JavaScript3</a></li>
+            <li><a href="Canvas1.html" target="_self">Canvas1</a></li>
+            <li><a href="Sponsorzy.html" target="_self">Czytaj komiksy</a></li>
+            <li><a href="Sklepy.html" target="_self">Kup komiksy</a></li>
+        </ul>
+        <iframe src="Kontrolki_JS.html">
+        </iframe>
+    </nav>
+    <article>
+        <h2>Elementy i sposób czytania mangi</h2>
+        <p>Kliknij w dowolny nieznajomy element lub strzałkę na rysunku aby dowiedzieć się więcej:</p>
+        <img src="manga_page.png" name="OnePieceSpread" usemap="#MAP" width="815" height="615" class="center" />
+        <map name="MAP">
+            <area shape="circle" coords="330,290,100"
+                  href="javascript:alert('SFX - onomatopeja ułatwiająca oddanie dźwięku zdarzenia. W tym wypadku japońska, jednak może być również uniwersalna, a najczęściej angielska')" onmouseover=""/>
+            <area shape="circle" coords="695, 285, 100"
+                  href="javascript:alert('SFX - onomatopeja ułatwiająca oddanie dźwięku zdarzenia. W tym wypadku japońska, jednak może być również uniwersalna, a najczęściej angielska')" />
+            <area shape="rect" coords="1, 246, 88, 281"
+                  href="javascript:alert('SFX - onomatopeja ułatwiająca oddanie dźwięku zdarzenia. W tym wypadku japońska, jednak może być również uniwersalna, a najczęściej angielska')" />
+            <area shape="rect" coords="93, 267, 133, 311"
+                  href="javascript:alert('Kierunek czytania paneli - od góry do dołu')" />
+            <area shape="rect" coords="142, 205, 213, 271"
+                  href="javascript:alert('Kierunek czytania paneli - od prawej do lewej, do górnego panelu')" />
+            <area shape="rect" coords="242,99,412,165"
+                  href="javascript:alert('Kierunek czytania paneli - od prawej do lewej')" />
+            <area shape="rect" coords="462,164,535,238"
+                  href="javascript:alert('Kierunek czytania paneli - od górnych paneli do dolnego')" />
+            <area shape="rect" coords="625,97,699,166"
+                  href="javascript:alert('Kierunek czytania paneli - od prawej do lewej')" />
+            <area shape="rect" coords="0, 553, 77, 610"
+                  href="javascript:alert('Notka edytorska')" />
+            <area shape="rect" coords="82, 556, 256, 600"
+                  href="javascript:alert('Nazwa serii oraz stopka końca rozdziału')" />
+        </map>
+    </article>
+</body>
+</html>

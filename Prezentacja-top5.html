@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Polecamy</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css" />
+    <style>
+        p {
+            text-align: center;
+        }
+        h2 {
+            text-align: center;
+        }
+    </style>
+    <script>
+
+        function logKey(e) {
+            if (e.code === "ArrowRight") {
+                Next();
+            }
+            else if (e.code === "ArrowLeft") {
+                Prev();
+            }
+        }
+
+        document.onkeyup = logKey;
+
+        var ImgNo = 0;
+        var Tab_Img = new Array(5);
+        Tab_Img[0] = "Invincible.jpg";
+        Tab_Img[1] = "sandman.jpg";
+        Tab_Img[2] = "spirit_circle.jpg";
+        Tab_Img[3] = "berserk.jpg";
+        Tab_Img[4] = "killing_joke.jpg";
+
+        function Next() {
+            if (ImgNo < Tab_Img.length - 1) {
+                ImgNo = ImgNo + 1;
+                document.getElementById("image").src = Tab_Img[ImgNo];
+            }
+            else {
+                document.getElementById("image").src = Tab_Img[Tab_Img.length - 1];
+                ImgNo = Tab_Img.length - 1;
+            }
+        }
+
+        function Prev() {
+            if (ImgNo > 0) {
+                ImgNo = ImgNo - 1;
+                document.getElementById("image").src = Tab_Img[ImgNo];
+            }
+            else {
+                document.getElementById("image").src = Tab_Img[0];
+                ImgNo = 0;
+            }
+        }
+
+    </script>
+</head>
+<body onload="Start()">
+    <header style="background-color:darkred">
+        <h1>KOMIKSOWO</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Index.html" target="_self">Strona Główna</a></li>
+            <li><a href="Tabela.html" target="_self">Top 50 Artystów</a></li>
+            <li><a href="Prezentacja-top5.html" target="_self">Dziś Polecamy</a></li>
+            <li><a href="Formularz.html" target="_self">Coś o Tobie</a></li>
+            <li><a href="Kontakt.html" target="_self">Coś o Mnie</a></li>
+            <li><a href="MAP_tag.html" target="_self">Jak czytać mangę?</a></li>
+            <li><a href="JavaScript1.html" target="_self">JavaScript1</a></li>
+            <li><a href="JavaScript2.html" target="_self">JavaScript2</a></li>
+            <li><a href="JavaScript3.html" target="_self">JavaScript3</a></li>
+            <li><a href="Canvas1.html" target="_self">Canvas1</a></li>
+            <li><a href="Sklepy.html" target="_self">Sponsorzy - gdzie kupować?</a></li>
+            <li><a href="Sponsorzy.html" target="_self">Sponsorzy - gdzie czytać?</a></li>
+        </ul>
+    </nav>
+    <article>
+        <br />
+        <h2>Co tydzień odwiedzaj stronę, a otrzymasz nowe rekomendacje <br /> najlepszych komiksów!</h2>
+        <p>
+            <div id="img_browser" style="text-align:center; width:700px; height: 590px;">
+                <img src="Invincible.jpg" id="image" height="600" width="490" style="margin-top:60px;">
+                <br /><br />
+                <button onclick="Prev()" style="width:95px; background-color:darkred;"> &lArr; <br /> Poprzedni </button>
+                <button onclick="Next()" style="width:95px; background-color:darkred;"> &rArr; <br /> Następny </button>
+            </div>
+        </p><br /><br /><br /><br /><br /><br /><br />
+        <h2>
+            W tym tygodniu wyróżnione przez nas zostały: <br /> <br />
+            - Invincible  - Sandman   - Spirit Circle   - Berserk   - Batman: The Killing Joke
+            <br /><br />
+            Daj któremuś szansę!
+        </h2>
+    </article>
+</body>
+</html>

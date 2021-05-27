@@ -1,0 +1,42 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Kontrolki JS</title>
+    <script type="text/javascript" src="Zegar.js"></script>
+    <script type="text/javascript" src="Stoper.js"></script>
+    <script type="text/javascript" src="Visits.js"></script>
+    <style>
+        h2 {
+            text-align: center;
+        }
+
+        section.javaScript {
+            width: 100%;
+            margin: 0px;
+            padding: 0px;
+            background-color: darkred;
+        }
+    </style>
+</head>
+<body onload="startclock(); starttimer();">
+    <section class="javaScript" id="java2">
+        <h2>ZEGAR</h2>
+        Czas aktualnie:<br />
+        <input type="text"  value="00:00:00" id="zegar" 
+               style="background:none; border:none;
+                      font-weight:bold; text-align:center" />
+        <br />
+        Czas przebywania na stronie:<br />
+        <input type="text" id="myStoper" value="0.00" 
+               style="background:none; border:none;
+                      font-weight:bold; text-align:center" />
+        <br />
+        Liczba odwiedzin strony: <br />
+        <input type="text" id="visitor_count" value="1"
+               style="background:none; border:none;
+                      font-weight:bold; text-align:center" />
+    </section>
+</body>
+</html>

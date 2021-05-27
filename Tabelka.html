@@ -1,0 +1,225 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Tabela w HTML</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css" />
+    <style>
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header style="background-color:darkred">
+        <h1>KOMIKSOWO</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="Index.html" target="_self">Strona Główna</a></li>
+            <li><a href="Tabela.html" target="_self">Top 50 Artystów</a></li>
+            <li><a href="Prezentacja-top10.html" target="_self">Dziś Polecamy</a></li>
+            <li><a href="Formularz.html" target="_self">Coś o Tobie</a></li>
+            <li><a href="Kontakt.html" target="_self">Coś o Mnie</a></li>
+            <li><a href="MAP_tag.html" target="_self">Jak czytać mangę?</a></li>
+            <li><a href="JavaScript1.html" target="_self">JavaScript1</a></li>
+            <li><a href="JavaScript2.html" target="_self">JavaScript2</a></li>
+            <li><a href="JavaScript3.html" target="_self">JavaScript3</a></li>
+            <li><a href="Canvas1.html" target="_self">Canvas1</a></li>
+            <li><a href="Canvas2.html" target="_self">Canvas2</a></li>
+            <li><a href="Sponsorzy.html" target="_self">Sklepy i Sponsorzy</a></li>
+        </ul>
+    </nav>
+    <style>
+        #PoleTabeli {
+            width: 25px;
+            height: 27px;
+            width: 666px;
+            height: 444px;
+            border: 0px;
+            padding: 0px;
+            margin: auto;
+            color: black;
+        }
+
+        h1 {
+            color: black;
+        }
+
+        table {
+            border: 2px solid black;
+        }
+
+        th.info {
+            text-align: center;
+            width: 25px;
+            height: 27px;
+            font-size: small;
+            color: yellow;
+            background-color: darkred;
+            border: 1px solid yellow;
+        }
+
+        td.nie {
+            text-align: center;
+            width: 25px;
+            height: 27px;
+            font-size: small;
+            color: black;
+            background-color: red;
+            border: 1px solid yellow;
+        }
+
+        td.tak {
+            text-align: center;
+            width: 25px;
+            height: 27px;
+            font-size: small;
+            background-color: lightgreen;
+            border: 1px solid yellow;
+        }
+
+        td.fill {
+            text-align: center;
+            width: 25px;
+            height: 27px;
+            font-size: medium;
+            background-color: #d45050;
+            color: black;
+            border-left: 2px solid yellow;
+            border-top: 2px solid yellow;
+            border-right: 2px solid yellow;
+            border-bottom: 2px solid yellow;
+        }
+    </style>
+    <article>
+        <div id="PoleTabeli">
+            <h2>Najbardziej poczytni autorzy i ich statystyki</h2>
+            <table border="1" cellspacing="0" cellpadding="0" style="margin: auto">
+                <thead>
+                    <tr>
+                        <th class="info" rowspan="2">Miejsce w<br />rankingu</th>
+                        <th class="info" colspan="2">Autor</th>
+                        <th class="info" rowspan="2">Typ publikacji</th>
+                        <th class="info" rowspan="2">Gatunek</th>
+                        <th class="info" rowspan="2">Liczba sprzedanych tomów</th>
+                        <th class="info" rowspan="2">Lata działalności</th>
+                        <th class="info" rowspan="2">Aktywny twórczo</th>
+                    </tr>
+                    <tr>
+                        <th class="info" rowspan="2">Imię</th>
+                        <th class="info" rowspan="2">Nazwisko</th>
+                    </tr>
+
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="fill">#1</td>
+                        <td class="fill">Kentaro</td>
+                        <td class="fill">Miura</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Seinen</td>
+                        <td class="fill">150 milionów</td>
+                        <td class="fill">1982-2021</td>
+                        <td class="nie">Śmierć</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#2</td>
+                        <td class="fill">Togashi</td>
+                        <td class="fill">Yoshihiro</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Shonen</td>
+                        <td class="fill">134 milionów</td>
+                        <td class="fill">1986-</td>
+                        <td class="nie">Hiatus</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#3</td>
+                        <td class="fill">Stan</td>
+                        <td class="fill">Lee</td>
+                        <td class="fill">Komiks</td>
+                        <td class="fill">Young Adult</td>
+                        <td class="fill">130 milionów</td>
+                        <td class="fill">1941-2018</td>
+                        <td class="nie">Śmierć</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#4</td>
+                        <td class="fill">Horikoshi</td>
+                        <td class="fill">Kohei</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Shonen</td>
+                        <td class="fill">100 milionów</td>
+                        <td class="fill">2014-</td>
+                        <td class="tak">Tygodniowo</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#5</td>
+                        <td class="fill">Eiichiro</td>
+                        <td class="fill">Oda</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Shonen</td>
+                        <td class="fill">98 milionów</td>
+                        <td class="fill">1997-</td>
+                        <td class="tak">Tygodniowo</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#6</td>
+                        <td class="fill">Robert</td>
+                        <td class="fill">Kirkman</td>
+                        <td class="fill">Komiks</td>
+                        <td class="fill">Young Adult</td>
+                        <td class="fill">95 milionów</td>
+                        <td class="fill">2000-</td>
+                        <td class="tak">Miesięcznie</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#7</td>
+                        <td class="fill">Satoru</td>
+                        <td class="fill">Noda</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Seinen</td>
+                        <td class="fill">80 milionów</td>
+                        <td class="fill">2011-</td>
+                        <td class="tak">Dwutygodniowo</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#8</td>
+                        <td class="fill">Gege</td>
+                        <td class="fill">Akutami</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Shonen</td>
+                        <td class="fill">50 milionów</td>
+                        <td class="fill">2014-</td>
+                        <td class="tak">Tygodniowo</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#9</td>
+                        <td class="fill">Tatsuki</td>
+                        <td class="fill">Fujimoto</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Shonen</td>
+                        <td class="fill">45 milionów</td>
+                        <td class="fill">2011-</td>
+                        <td class="nie">On-hold</td>
+                    </tr>
+                    <tr>
+                        <td class="fill">#10</td>
+                        <td class="fill">Makoto</td>
+                        <td class="fill">Yukimura</td>
+                        <td class="fill">Manga</td>
+                        <td class="fill">Seinen</td>
+                        <td class="fill">44 miliony</td>
+                        <td class="fill">1999-</td>
+                        <td class="tak">Miesięcznie</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </article>
+</body>
+</html>
