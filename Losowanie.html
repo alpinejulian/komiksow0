@@ -1,0 +1,78 @@
+﻿<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Losowanie</title>
+    <link rel="stylesheet" type="text/css" href="Layout.css" />
+    <link rel="stylesheet" type="text/css" href="MenuStyle.css" />
+    <style>
+        h2 {
+            width: 100%;
+            text-align: center;
+        }
+
+        h1 {
+            color: yellow;
+        }
+    </style>
+    <script>
+
+        var Tab_Img = new Array(10);
+        Tab_Img[0] = "Invincible.jpg";
+        Tab_Img[1] = "sandman.jpg";
+        Tab_Img[2] = "spirit_circle.jpg";
+        Tab_Img[3] = "berserk2.jpg";
+        Tab_Img[4] = "killing_joke.jpg";
+        Tab_Img[5] = "batman_detective.jpg";
+        Tab_Img[6] = "landoflustrous.jpg";
+        Tab_Img[7] = "my_hero_academia.jpg";
+        Tab_Img[8] = "spiderman.jpg";
+        Tab_Img[9] = "blueperiod.jpg";
+
+        function getRandomInt(max) {
+            return Math.floor(Math.random() * max);
+        }
+
+        function Losuj()
+        {
+            let index = getRandomInt(10);
+            let img_src = Tab_Img[index];
+            document.getElementById('obraz').src = img_src;
+        }
+
+    </script>
+
+</head>
+<body>
+    <header style="background-color:darkred">
+        <h1>KOMIKSOWO</h1>
+    </header>
+    <nav>
+        <h2>Menu:</h2>
+        <ul>
+            <li><a href="index.html" target="_self">Strona Główna</a></li>
+            <li><a href="Tabelka.html" target="_self">Top 10 Artystów</a></li>
+            <li><a href="Prezentacja-top5.html" target="_self">Dziś Polecamy</a></li>
+            <li><a href="Formularz.html" target="_self">Coś o Tobie</a></li>
+            <li><a href="Kontakt.html" target="_self">Coś o Mnie</a></li>
+            <li><a href="MAP_tag.html" target="_self">Jak czytać mangę?</a></li>
+            <li><a href="Losowanie.html" target="_self">Losuj komiks!</a></li>
+            <li><a href="Przelicznik.html" target="_self">Przelicznik</a></li>
+            <li><a href="Canvas.html" target="_self">Rysunek</a></li>
+            <li><a href="Sponsorzy.html" target="_self">Czytaj komiksy</a></li>
+            <li><a href="Sklepy.html" target="_self">Kup komiksy</a></li>
+
+        </ul>
+        <iframe src="Kontrolki_JS.html">
+        </iframe>
+    </nav>
+    <article>
+        <br /> <br /> <br />
+        <center>
+        <input type="button" onclick="Losuj()" id="button" value="KLIKNIJ! TWÓJ NASTĘPNY KOMIKS TO..." />
+        <br />
+        <br />
+        <img id="obraz" width=500 height=700 />
+        </center>
+    </article>
+</body>
+</html>
